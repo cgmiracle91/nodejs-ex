@@ -230,17 +230,24 @@ pre {
                 <p>
                   The Tip Calculator Code will go under this section
                 </p>
+              
 
-<form action="/action_page.php">
-  <label for="cars">Choose a tip amount:</label>
-  <select name="tip" id="tipAmount">
-    <option value="10">10</option>
-    <option value="15">15</option>
-    <option value="20">20</option>
-    <option value="25">25</option>
-    <option value="30">30</option>
-  </select>
-  <br><br>
+  <form action="/action_page.php">
+    <label for="fname">Bill Amount</label><br>
+    <input type="text" id="billAmount" name="billAmount" value="Enter amount"><br>
+    <input type="submit" value="Submit">
+  </form>
+              
+  <form action="/action_page.php">
+    <label for="cars">Choose a tip amount:</label>
+    <select name="tip" id="tipAmount">
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+    </select>
+    <br><br>
   <input type="submit" value="Submit">
 </form>
 <p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
