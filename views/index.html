@@ -232,39 +232,22 @@ pre {
                 </p>
               
 
-  <form action="/action_page.php">
-    <label for="fname">Bill Amount</label><br>
-    <input type="text" id="billAmount" name="billAmount" value="">
-    <br>
-    <label for="cars">Choose a tip amount:</label>
-    <select name="tip" id="tipAmount">
-      <option value="10">10</option>
-      <option value="15">15</option>
-      <option value="20">20</option>
-      <option value="25">25</option>
-      <option value="30">30</option>
-    </select>
-    <br>
-  <input type="submit" value="Submit">
-</form>
-<p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
-<p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
-
-                <h3>Working in your local Git repository</h3>
-                <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
-
-<pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
-
-# Within your project directory
-# Commit your changes and push to OpenShift
-
-$ git commit -a -m 'Some commit message'
-$ git push</pre>
-
-<p>After pushing changes, you'll need to manually trigger a build if you did not setup a webhook as described above.</p>
-
+              <form action="/action_page.php">
+                <label for="fname">Bill Amount</label><br>
+                <input type="text" id="billAmount" name="billAmount" value="">
+                <br>
+                <label for="cars">Choose a tip amount:</label>
+                <select name="tip" id="tipAmount">
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
             </section>
-
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
 
