@@ -214,6 +214,8 @@ html {
                 <br><br>
                 <input type="submit" value="submit" id="submit">
                 <br><br>
+                <label for="tipAmount">Tip Amount</label><br>
+                <input type="text" id="tipAmount" name="tipAmount" value="">
                 <label for="billTotal">Bill Total</label><br>
                 <input type="text" id="billTotal" name="billTotal" value="">
               </form>
@@ -231,7 +233,7 @@ html {
     let billAmount = document.getElementById('billAmount').value;
     let tipAmount = document.getElementById('tipAmount').value;
   
-    console.log(billAmount);
+    let tipTotal = document.getElementById('tipTotal').value;
     })
   </script>
 </body>
