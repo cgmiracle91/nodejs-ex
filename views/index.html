@@ -233,7 +233,8 @@ html {
           let tipAmount = document.getElementById('tipAmount').value;
     
           let tipTotal = document.getElementById('tipTotal').value = "$" + (billAmount * (tipAmount / 100));
-          document.getElementById('billTotal').value = "$" + (parseFloat(billAmount) + parseFloat(tipTotal));
+          let billTotal = billAmount + tipTotal;
+          document.getElementById('billTotal').value = "$" + billTotal;
         })
     </script>
     </body>
