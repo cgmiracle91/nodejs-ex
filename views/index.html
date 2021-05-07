@@ -232,7 +232,8 @@ html {
           let billAmount = document.getElementById('billAmount').value;
           let tipAmount = document.getElementById('tipAmount').value;
     
-          let tipTotal = document.getElementById('tipTotal').value = "$" + (billAmount * (tipAmount / 100));
+          let tipTotal = (billAmount * (tipAmount / 100));
+          document.getElementById('tipTotal').value = "$" + tipTotal;
           let billTotal = billAmount + tipTotal;
           document.getElementById('billTotal').value = "$" + billTotal;
         })
