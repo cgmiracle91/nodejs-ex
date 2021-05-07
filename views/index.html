@@ -225,6 +225,15 @@ html {
           <div class="logo"><a href="https://www.openshift.com/"></a></div>
         </footer>
   </section>
-  <script scr="main.js"></script>
+  <script scr="main.js">
+    let submit = document.getElementById('submit')
+
+    submit.addEventListener('click', function(){
+    let billAmount = document.getElementById('billAmount').value;
+    let tipAmount = document.getElementById('tipAmount').value;
+  
+    console.log(billAmount);
+})
+  </script>
 </body>
 </html>
