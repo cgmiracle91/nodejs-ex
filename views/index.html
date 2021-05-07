@@ -227,12 +227,13 @@ html {
     </section>
     <script>
         let submit = document.getElementById('submit')
-        submit.addEventListener('click', function(){
-        let billAmount = document.getElementById('billAmount').value;
-        let tipAmount = document.getElementById('tipAmount').value;
+        submit.addEventListener('click', function(event){
+          event.preventDefault()
+          let billAmount = document.getElementById('billAmount').value;
+          let tipAmount = document.getElementById('tipAmount').value;
     
-        let tipTotal = document.getElementById('tipTotal').value = billAmount * (tipAmount / 100);
-        document.getElementById('billTotal').value = parseFloat(billAmount) + parseFloat(tipTotal);
+          let tipTotal = document.getElementById('tipTotal').value = billAmount * (tipAmount / 100);
+          document.getElementById('billTotal').value = parseFloat(billAmount) + parseFloat(tipTotal);
         })
     </script>
     </body>
